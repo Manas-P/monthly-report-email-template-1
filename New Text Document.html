@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ========Fonts========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #FF7901;
+  font-weight: 500;
+}
+
+body{
+  background: #F3F3F3;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper{
+  background: #F3F3F3;
+  padding:32px;
+  max-width:720px;
+}
+
+.wrapper .header{
+  background: #3D3D3D;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px 24px 26px 24px;
+}
+
+.wrapper .header .logo{
+  width:160px;
+}
+
+
+.strip {
+  width:100%;
+  height:4px;
+  background-color: #FDBA2F;
+}
+
+.logo-bg{
+  position: absolute;
+  z-index: 5;
+  top:32px;
+  left:50%;
+  height:100%;
+  transform: translateX(-50%);
+}
+
+
+.wrapper .header .content{
+  display: flex;
+  flex-direction: column;
+  color: #202020;
+}
+
+.wrapper .header .content .line1 {
+  font-family: 'Poppins'!important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color:#fff;
+}
+
+.wrapper .header .content .line2{
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}
+
+.wrapper .header .content .line3 {
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-size: 16;
+  color: #FDBA2F;
+}
+
+.wrapper .hero .content .line3 span {
+  color: #FF7901;
+  font-weight: 700;
+}
+
+.wrapper .section-1{
+  padding:22px 24px;
+  background: #ffffff;
+}
+
+.wrapper .section-1 .heading {
+  color: #202020;
+  background: #FEDD97;
+  border-radius: 2px;
+  padding:6px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.wrapper .section-1 .sub-headingg{
+  margin-top: 16px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #202020;
+  text-decoration: underline;
+  text-decoration-color: #FDBA2F;
+}
+
+.wrapper .section-1 .paragraph{
+  display: flex;
+  align-items: flex-start;
+  column-gap: 6px;
+  margin-top: 10px;
+}
+
+.wrapper .section-1 .paragraph .pointer {
+  background: #FDBA2F;
+  min-height:6px;
+  min-width:6px;
+  border-radius: 3px;
+  margin-top: 6px;
+}
+
+.wrapper .section-1 .paragraph .content{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 146.99%;
+}
+
+.wrapper .section-1 .paragraph .content span{
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.wrapper .FFI-section{
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  padding:20px 36px;
+  background: #FFF9EB;
+}
+
+.wrapper .FFI-section .ffi-image{
+  display: flex;
+  flex-direction: column;
+  width:154px;
+  row-gap: 6px;
+}
+
+
+.wrapper .FFI-section .contents .paragraph{
+  display: flex;
+    align-items: flex-start;
+    column-gap: 6px;
+    margin-top: 10px;
+}
+
+.wrapper .FFI-section .contents .paragraph .pointer{
+  background: #FDBA2F;
+    min-height: 6px;
+    min-width: 6px;
+    border-radius: 3px;
+    margin-top: 4px;
+}
+
+.wrapper .FFI-section .contents .paragraph .content{
+  font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 146.99%;
+}
+
+.wrapper .FFI-section .contents .paragraph .content span{
+  font-weight: 700;
+}
+
+.wrapper .section-2{
+  padding:10px 24px;
+  background: #ffffff;
+}
+
+.wrapper .section-2 .sub-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #202020;
+  text-decoration: underline;
+    text-decoration-color: #FDBA2F;
+}
+
+.wrapper .section-1 .sub-heading {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #202020;
+  text-decoration: underline;
+    text-decoration-color: #FDBA2F;
+}
+
+
+.wrapper .section-2 .paragraph {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 6px;
+  margin-top: 10px;
+}
+
+.wrapper .section-2 .paragraph .pointer {
+  background: #FDBA2F;
+  min-height: 6px;
+  min-width: 6px;
+  border-radius: 3px;
+  margin-top: 6px;
+}
+
+.wrapper .section-2 .paragraph .content {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 146.99%;
+}
+
+.wrapper .section-2 .paragraph .content span {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+
+
+
+
+
+.wrapper .section-2 .sub-paragraph {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 6px;
+  margin: 4px 0 0 18px;
+}
+
+.wrapper .section-2 .sub-paragraph .pointer {
+  background: #fff;
+  min-height: 6px;
+  min-width: 6px;
+  border-radius: 6px;
+  margin-top: 8px;
+  border: 1.5px solid #FDBA2F;
+}
+
+.wrapper .section-2 .sub-paragraph .content {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 146.99%;
+}
+
+.wrapper .section-2 .sub-paragraph .content span {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+
+.wrapper .section-1 .sub-paragraph {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 6px;
+  margin: 4px 0 0 18px;
+}
+
+.wrapper .section-1 .sub-paragraph .pointer {
+  background: #fff;
+  min-height: 6px;
+  min-width: 6px;
+  border-radius: 6px;
+  margin-top: 8px;
+  border: 1.5px solid #FDBA2F;
+}
+
+.wrapper .section-1 .sub-paragraph .content {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 146.99%;
+}
+
+.wrapper .section-1 .sub-paragraph .content span {
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.table{
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table span{
+  color:#FDBA2F;
+  font-weight: 700;
+}
+
+.table .num{
+  text-align: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding:6px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 12px;
+}
+
+th{
+  background-color:#FDBA2F;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  width:200px;
+}
+
+.astriks{
+  margin:8px 0 0 18px;
+  font-family: 'Roboto';
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.astriks span {
+  color: #FDBA2F;
+  font-weight: 700;
+}
+
+.strip1 {
+  width: 100%;
+  height: 4px;
+  background-color: #FDBA2F;
+}
+.strip2 {
+  width: 100%;
+  height: 8px;
+  background-color: #3D3D3D;
+}
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- ========Header Section======== -->
+        <div class="header">
+            <div class="logo-bg">
+                <img src="http://drive.google.com/uc?export=view&id=19phn_B-CC0ALxbjFs2ODAq2VpuL00xMs" alt="">
+            </div>
+            <div class="content">
+                <div class="line1">Futurense Academy</div>
+                <div class="line2">Monthly Report</div>
+                <div class="line3"><span>April to mid-May 2023</span></div>
+            </div>
+            <div class="logo">
+                <img src="http://drive.google.com/uc?export=view&id=10ZeJj6_zh-IBpAGTlcVaK3esqbjZhq4M">
+            </div>
+        </div>
+        
+        <div class="strip"></div>
+        <!-- ==========End of Header Section============ -->
+
+        <!-- =============Hero Section============= -->
+        <!-- =============End of Hero Section========== -->
+
+        <!-- ===========Section 1============ -->
+        <div class="section-1">
+            <div class="heading">
+                Top Initiatives & Key Highlights
+            </div>
+            <div class="sub-headingg">
+                Training
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Successfully decreased the overall training duration by <span>3.5 hours</span> without compromising the quality of the DS program by
+                    increasing the training duration by <u>30 mins on weekdays</u> and by <u>1 hours on Saturdays</u>, making progress towards our goal of
+                    a <span>78-day training period</span>
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Transitioned weekly assessments to <span>100% scenario based MCQs and compound coding questions</span> from knowledge-based MCQs and
+                    direct coding questions, providing a more accurate reflection of candidates' performance.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Utilized blended learning approaches by curating and assigning <span>5 self-paced learning courses</span> on <u>Data Visualization (Power BI, Tableau)</u> and <u>Azure DE Services (Data Lake, Data Bricks, Data Factory)</u> that allowed engineers to learn at
+                    their own pace.
+                </div>
+            </div>
+        </div>
+        <!-- ===========End of Section 1============ -->
+
+        <!-- ===============FFI Section============= -->
+        <div class="FFI-section">
+            <div class="ffi-image">
+                <img src="http://drive.google.com/uc?export=view&id=1HRuucsW1OKZq6SeoqcmqH27m2muzr2E6">
+                
+                <img src="http://drive.google.com/uc?export=view&id=1r7sczWSbce__oCSpp-uBBdDttwobirLN">
+                
+            </div>
+            <div class="contents">
+                <div class="paragraph">
+                    <div class="pointer"></div>
+                    <div class="content"> 
+                        The average FFI has been increased to <span>7.25</span> from 6.93 in April month across all cohorts by introducing cheat sheets,
+                        self-paced courses in training, revamping the difficulty level across assessments, increasing the frequency of mock
+                        interviews, providing personalised remediations by Sowmya and Devi that shows significant progress towards our target of
+                        <span>7.4</span>.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ===============End of FFI Section============= -->
+
+        <!-- ==========Section 2============== -->
+        <div class="section-2">
+            <div class="sub-heading">Cohort & Engagement</div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Launched 2 new cohorts
+                </div>
+            </div>
+            <div class="sub-paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Lateral cohort (FFL-21) has joined us on <span>16th April</span> at the <span>Hyderabad office</span>, consisting of <u>13 engineers</u>.
+                </div>
+            </div>
+            <div class="sub-paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Fresher cohort-University (FFF-22) has joined us on <span>08th May</span> virtually as their semester exams are going on and will be
+                    later transitioned to <span>Hyderabad office</span> after a month. This batch consists of <u>31 engineers</u> in total.
+                </div>
+            </div>
+            <div class="sub-paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    A new LEM, Deep Chand has joined our Hyderabad office who would be handling FFL-21 and FFF-22 and Vinayak would be
+                    mentoring him.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Successfully moved <span>100% of learners from red zone in 4th week of April</span> for the first time. This was done by connecting
+                    with all the engineers individually on a weekly basis to understand their issues and concerns and providing personalised
+                    feedback and resources. Follow-up connects conducted with the same engineers to monitor their progress.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Organized <span>4 alumni connects</span> between existing cohort engineers with deployed engineers from Aditya Birla, Gallagher,
+                    Celebal Technologies and Bread Financials where they shared their experiences, including their journey with the company,
+                    interview preparation insights, and discussed their current projects at client companies.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Introduced an industry-expert connect program from <span>Rakuten</span>, providing learners with unique insights into the evolving
+                    data engineering field. Planning to get the next SME connect sessions with Anees Merchant on <u>Prompt Engineering</u> next
+                    month.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Initiated a practice of reaching out to <span>2 deployed candidates per day</span>. This is helping us to understand the projects
+                    these engineers are working on, and also creating a better engagement with the engineers.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Conducted a <span>34 hours sprint Techathon</span> for 76 students of JAIN final year AIML & Cybersecurity students out of which 3
+                    students were finally selected for a Project Semester with Futurense. Planning to strategize Techathon for Futurense
+                    cohorts every month to improve their competitive coding and presentation skills.
+                </div>
+            </div>
+        </div>
+        <!-- ==========End ofSection 2============== -->
+
+        <!-- ===============Section 3================ -->
+        <div class="section-2">
+            <div class="sub-heading"> Deployment </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Filled the open positions for <span>8 companies</span> such as <u>Moder, Escalent, Celebal, Awone, Aditya Birla Capital, Ashok Leyland, Bread Financial</u> and <u>Levi's</u>. During the process, recognized a few setbacks in engineers abilities to effectively
+                    identify analytical business problems, such as ability to identify KPIs, summarize business wise data trends and present
+                    business insights during Levi's, Celebal, and Uber interviews and started working on them.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    The total selections is <span>26</span> for April to mid-May.
+                </div>
+            </div>
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Client</th>
+                        <th>Total Openings</th>
+                        <th>Total Positions Filled</th>
+                    </tr>
+                    <tr>
+                        <td>Moder</td>
+                        <td class="num">1</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>Awone</td>
+                        <td class="num">3</td>
+                        <td class="num">3<span>*</span></td>
+                    </tr>
+                    <tr>
+                        <td>Aditya Birla Capital</td>
+                        <td class="num">3</td>
+                        <td class="num">5<span>**</span></td>
+                    </tr>
+                    <tr>
+                        <td>Escalent</td>
+                        <td class="num">1</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>Ashok Leyland</td>
+                        <td class="num">5</td>
+                        <td class="num">5</td>
+                    </tr>
+                    <tr>
+                        <td>Celebal</td>
+                        <td class="num">15</td>
+                        <td class="num">8</td>
+                    </tr>
+                    <tr>
+                        <td>Bread Financials</td>
+                        <td class="num">1</td>
+                        <td class="num">1</td>
+                    </tr>
+                    <tr>
+                        <td>Levi's</td>
+                        <td class="num">4</td>
+                        <td class="num">2<span>***</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="astriks">
+                <div class="astriks-sub"><span>*</span>1 Dropout due to personal reasons. 1 client interview pending.</div>
+                <div class="astriks-sub"><span>**</span>2 Dropout due to Mumbai location constraint. Engineers are expecting higher salary for Mumbai location.</div>
+                <div class="astriks-sub"><span>***</span>Additional profiles shared. Interviews yet to be scheduled.</div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Out of 35 open positions, 23 were successfully filled, achieving interview-to-hire ratio of <span>65.3%</span>.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Started a process of creating structured internal <span>JDs & MoMs</span> after every technical calibration call for eliminating
+                    reliance on client JD and started the practice of sharing the same with the client for their knowledge and sign-off.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Co-worked with Dr. Anshuman and Melwyn to create a framework for assigning <span>relevancy scores</span> for client requirements.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Automation Anywhere carried out a vetting process for <span>6 candidates</span>, found them suitable and was impressed by the
+                    quality of training so far.
+                </div>
+            </div>
+        </div>
+        <!-- ===============End of Section 3================ -->
+
+        <!-- =================Section 4================= -->
+        <div class="section-2">
+            <div class="sub-heading">Content & Curriculum</div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Determined the high level topics, selection requirements and necessary skill sets for DS professionals with <span>3-5 years</span>
+                    of experience and <span>Semiconductors</span>, however it’s still a WIP.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Created and uploaded <span>10 cheat sheets</span> on Python basics, Python Advanced, SQL basics, SQL Advanced, Unix shell
+                    scripting, DataStage, Hadoop, Hive, Sqoop and ChatGPT to the LMS, making them available to candidates.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Developed <span>4 industry-specific playbook</span> on Ashok Leyland, Celebal, WTW and Bread Financials to assist students in
+                    enhancing their interview preparation.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Developed <span>4 RFPs</span> on Ashok Leyland, Celebal, Altigreen and Aditya Birla Capital that provide in-depth analysis of
+                    business problems in various domains such as Commercial Vehicle, Technology Solution, EV Technology, and Financial
+                    Services.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Initiated creating <u>interview preparation videos</u> with a goal to create <span>50 videos</span> in the month of June. <a target="_blank" href="https://futurense1.sharepoint.com/:v:/s/delivery/ETKt9r8DeiBCs4U31zeP6rsBXuN29U5PiSbP31CbfUPTLA?e=dlK8XM">Here</a> is the link
+                    to access the frozen template, shoots in progress.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Created <u>non-technical interview preparation videos</u>, with a total of <span>14 videos</span> produced so far. <a target="_blank" href="https://vimeo.com/825842930?share=copy">Here</a> is the link to
+                    access one of the sample video.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Curated <span>50 topic-wise videos</span> from the <span>classroom training recordings</span> and integrated them into LMS for the <span>Data Specialist Program Bridge Course.</span>
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Compiled a repository of over <span>50 content resources</span> curated from LinkedIn, which includes handbooks, courses, and cheat
+                    sheets. These resources are being tracked for their usage in training.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Worked on <span>Bridge Course</span> creation in 2 phases:
+                </div>
+            </div>
+            <div class="sub-paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    <u>Phase 1</u> was built using available resources and a corresponding course has been set up on the LMS. This will be rolled
+                    out to the candidates who have accepted offers for the <span>May</span> batch.
+                </div>
+            </div>
+            <div class="sub-paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    <u>Phase 2</u> will be built entirely from scratch and will incorporate SMEs based videos. This will be rolled out to the
+                    candidates who will accept offers for the <span>June</span> batch.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content"> Started a <span>curriculum task force</span> to rapidly upgrade curriculum as per industry dynamics.</div>
+            </div>
+            
+        </div>
+        <!-- ===================End on Section 4================ -->
+
+        <!-- ===============Section 5================ -->
+        <div class="section-1">
+            <div class="heading heading2"> Challenges and Learnings </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    There has been issues faced by the engineers in completing project/assignments within the given timeframe of 1.5 weeks
+                    during a recent PySpark training.
+                </div>
+            </div>
+            <div class="sub-paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    To tackle this challenge and improve their productivity, we introduced the <span>Pomodoro Technique</span> by dividing
+                    their work into 25-minute intervals with 5-minute breaks in between. The goal is also to teach them effective time
+                    management.
+                </div>
+            </div>
+
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    There's been pushback from some engineers on the platform regarding new assessment formats due to factors like
+                    increased difficulty levels, working on a compiler, and the duration of the tests.
+                </div>
+            </div>
+            <div class="sub-paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    To address these concerns, we're persisting with our mentoring efforts and encouraging practice more hands-on and
+                    self-paced resources. The compiler issue is also being addressed by the technology team.
+                </div>
+            </div>
+
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    There was a disparity in Python knowledge among the students, with the majority being recent college graduates who had
+                    a basic understanding, while a few others who had completed their master's degrees already had an advanced level of
+                    proficiency in Python. Also a fair number of students came from support background, with basic level and were slow to
+                    pick up advanced levels.
+                </div>
+            </div>
+            <div class="sub-paragraph">
+                <div class="pointer"></div>
+                <div class="content"> 
+                    To bridge this gap, we implemented a solution where lower-level students received extra remediation assistance, while
+                    advanced students were presented with challenging tasks like RFPs.
+                </div>
+            </div>
+        </div>
+        <!-- =============End of Section 5================ -->
+
+        <!-- ============Section 6============ -->
+        <div class="section-1">
+            <div class="heading heading3"> Top Priority Initiatives Planned Next Month </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Create <u>5 new types of learning resources</u>, such as cheat sheets, courses, and self-paced materials, utilizing the
+                    content curated from LinkedIn.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Kick-off the revamped <u>curriculum</u> by integrating ChatGPT, RFPs and revising some tools and technologies as per client
+                    demand.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Speak with <span>30 deployed engineers</span> next month with the goal of understanding their current projects, DE workflows, and
+                    understand the rationale behind technology selections and add these to our intel.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Create a pipeline of industry experts for conducting <span>1 webinar per week</span> to actively engage learners beyond their
+                    training and also facilitate <span>mock interviews</span> for Futurense cohort engineers.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Organize monthly <u>Techathons</u> for Futurense cohorts to improve their competitive coding abilities and presentation
+                    skills.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Roll out <u>Bridge Course</u> before the candidates join our cohort as pre-joining engagement activity starting from FFF-23.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Roll out a standalone self-paced course on <u>ChatGPT</u> of total duration of 10 hours consisting of videos, PPTs, practice
+                    assessments, case studies and projects.
+                </div>
+            </div>
+            <div class="paragraph">
+                <div class="pointer"></div>
+                <div class="content">
+                    Conduct a weekly soft-skill session with Devi for our deployed engineers, aiming to offer coaching and remediations.
+                </div>
+            </div>
+        </div>
+        <!-- ===========End of Section 6=========== -->
+
+        <div class="strip1"></div>
+        <div class="strip2"></div>
+    </div>
+</body>
+</html>

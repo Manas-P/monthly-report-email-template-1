@@ -1,7 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-}
 
 a{
   color: #FF7901;
@@ -16,61 +12,66 @@ body{
 
 .wrapper{
   background: #F3F3F3;
-  padding:32px;
-  max-width:680px;
+  padding:18px;
+  max-width:720px;
 }
 
 .wrapper .header{
   background: #3D3D3D;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding:20px 24px 26px 24px;
 }
 
-.wrapper .header .waves img{
-  width:100%;
-  top: 0;
+.wrapper .header .logo{
+  width:160px;
 }
 
-.wrapper .header .logo {
-  padding:6px 0 18px 0;
-}
 
-.wrapper .header .strip1 {
+.strip {
   width:100%;
   height:4px;
   background-color: #FDBA2F;
 }
 
-.wrapper .hero{
-  background: #FFF9EB;
-  padding:32px 48px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.logo-bg{
+  position: absolute;
+  z-index: 5;
+  top:32px;
+  left:50%;
+  height:100%;
+  transform: translateX(-50%);
 }
 
-.wrapper .hero .content{
+
+.wrapper .header .content{
   display: flex;
   flex-direction: column;
-  row-gap: 8px;
-  align-items: flex-end;
   color: #202020;
 }
 
-.wrapper .hero .content .line1 {
-  font-family: 'Poppins';
+.wrapper .header .content .line1 {
+  font-family: 'Poppins'!important;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
+  color:#fff;
 }
 
-.wrapper .hero .content .line2,
-.wrapper .hero .content .line3{
-  font-family: 'Poppins';
+.wrapper .header .content .line2{
+  font-family: 'Poppins' !important;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  color: #fff;
+}
+
+.wrapper .header .content .line3 {
+  font-family: 'Poppins' !important;
+  font-style: normal;
+  font-size: 16px;
+  color: #FDBA2F;
 }
 
 .wrapper .hero .content .line3 span {
@@ -79,7 +80,7 @@ body{
 }
 
 .wrapper .section-1{
-  padding:22px 24px;
+  padding:6px 24px;
   background: #ffffff;
 }
 
@@ -87,32 +88,25 @@ body{
   color: #202020;
   background: #FEDD97;
   border-radius: 2px;
-  padding:2px 6px;
+  padding:6px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  text-transform: uppercase;
-  width: auto;
-  max-width: 304px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.wrapper .section-1 .heading2 {
-  max-width: 256px;
-}
-
-.wrapper .section-1 .heading3 {
-  max-width: 428px;
-}
-
-.wrapper .section-1 .sub-heading{
-  margin-top: 8px;
+.wrapper .section-1 .sub-headingg{
+  margin-top: 16px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 12px;
   color: #202020;
-  
+  text-decoration: underline;
+  text-decoration-color: #FDBA2F;
 }
 
 .wrapper .section-1 .paragraph{
@@ -127,14 +121,14 @@ body{
   min-height:6px;
   min-width:6px;
   border-radius: 3px;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .wrapper .section-1 .paragraph .content{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 146.99%;
 }
 
@@ -145,22 +139,19 @@ body{
 
 .wrapper .FFI-section{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding:24px 32px;
+  column-gap: 32px;
+  padding:20px 36px;
   background: #FFF9EB;
 }
 
 .wrapper .FFI-section .ffi-image{
-  margin-left: 30px;
-}
-
-.wrapper .FFI-section .contents{
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
-  align-items: center;
+  width:154px;
+  row-gap: 6px;
 }
+
 
 .wrapper .FFI-section .contents .paragraph{
   display: flex;
@@ -174,15 +165,14 @@ body{
     min-height: 6px;
     min-width: 6px;
     border-radius: 3px;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 
 .wrapper .FFI-section .contents .paragraph .content{
   font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    width: 272px;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 146.99%;
 }
 
@@ -191,7 +181,7 @@ body{
 }
 
 .wrapper .section-2{
-  padding:10px 24px;
+  padding:6px 24px;
   background: #ffffff;
 }
 
@@ -199,16 +189,20 @@ body{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 12px;
   color: #202020;
+  text-decoration: underline;
+    text-decoration-color: #FDBA2F;
 }
 
 .wrapper .section-1 .sub-heading {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 12px;
   color: #202020;
+  text-decoration: underline;
+    text-decoration-color: #FDBA2F;
 }
 
 
@@ -224,14 +218,14 @@ body{
   min-height: 6px;
   min-width: 6px;
   border-radius: 3px;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .wrapper .section-2 .paragraph .content {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 146.99%;
 }
 
@@ -265,7 +259,7 @@ body{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 146.99%;
 }
 
@@ -295,7 +289,7 @@ body{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 146.99%;
 }
 
@@ -306,10 +300,13 @@ body{
 
 .table{
   margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .table span{
-  color:#FF7901;
+  color:#FDBA2F;
   font-weight: 700;
 }
 
@@ -325,6 +322,7 @@ td {
   padding:6px;
   font-family: 'Roboto';
   font-style: normal;
+  font-size: 12px;
 }
 
 th{
@@ -332,18 +330,33 @@ th{
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  width:500px;
+  font-size: 12px;
+  width:200px;
 }
 
 .astriks{
-  margin-top: 8px;
+  margin:8px 0 0 18px;
   font-family: 'Roboto';
-  font-style: italic;
-  color: #888888;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
 }
 
 .astriks span {
-  color: #FF7901;
+  color: #FDBA2F;
   font-weight: 700;
 }
+
+.strip1 {
+  width: 100%;
+  height: 4px;
+  background-color: #FDBA2F;
+}
+.strip2 {
+  width: 100%;
+  height: 8px;
+  background-color: #3D3D3D;
+}
+
+/* ===================Media Query================ */

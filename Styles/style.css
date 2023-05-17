@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+a{
+  color: #FF7901;
+  font-weight: 500;
+}
+
 body{
   background: #F3F3F3;
   display: flex;
@@ -260,6 +265,10 @@ body{
 .table span{
   color:#FF7901;
   font-weight: 700;
+}
+
+.table .num{
+  text-align: center;
 }
 
 table,
